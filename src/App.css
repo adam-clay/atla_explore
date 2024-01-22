@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+nav {
+  display: flex;        /* Use flexbox for alignment */
+  justify-content: center; /* Center flex items horizontally */
+  padding: 10px;        /* Add some padding inside the nav */
+  margin: 20px 0;       /* Add some margin around the nav */
+  border: 1px solid #ccc; /* Border for the box */
+  border-radius: 5px;   /* Rounded corners for the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  background-color: #cccbcb;
+  width: 90%;
+}
+
+nav a {
+  color: #367C2B; /* John Deere green */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button, a.button {
+  background-color: #367C2B; /* John Deere green */
+  color: #FFD700; /* A shade of yellow */
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, a.button:hover {
+  background-color: #2E5C23; /* A darker shade of green */
+}
+
+h1, h2 {
+  color: #367C2B; /* John Deere green */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #FFF;
+  border: 1px solid #367C2B; /* John Deere green */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+li:hover {
+  background-color: #FFD700; /* A shade of yellow */
+  color: #FFF;
+}
+
+li a {
+  color: #333; /* Dark text color for contrast */
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #FFF; /* White text on hover for better readability */
+}
+
+/* Style for the user detail page */
+.user-detail {
+  background-color: #FFF;
+  border: 2px solid #367C2B; /* John Deere green */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.user-detail h2 {
+  margin-top: 0;
+}
+
+/* Additional global styling as needed */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container, button, a.button {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+.user-item {
+  display: block; /* Make the link fill the entire list item */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove the underline from the link */
+  color: inherit; /* Use the same text color as the parent */
+}
+
+.branch-item {
+  display: block; /* Make the link fill the entire list item */
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove the underline from the link */
+  color: inherit; /* Use the same text color as the parent */
+}
+
+.header {
+  width: 100%;
+  display: flex;      /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px 0;
+}
+
+.banner-image {
+  width: 60%;  /* Adjust this to control the width of your image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* This ensures the image covers the area nicely */
+}
+
+.subscriptions-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.subscriptions-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.subscriptions-form input[type="text"],
+.subscriptions-form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.subscriptions-form button {
+  background-color: #367C2B;;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscriptions-form button:hover {
+  background-color: #2E5C23;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center; /* Center the form content horizontally */
+  padding: 20px;
+  border-top-left-radius: 0; /* Top left corner sharp */
+  border-top-right-radius: 0; /* Top right corner sharp */
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column; /* Stack the inputs vertically */
+  max-width: 800px; /* Maximum width of the form */
+  width: 100%; /* Make the form take up the full width of its container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff; /* Background color for the form */
+  border-top-left-radius: 0; /* Top left corner sharp */
+  border-top-right-radius: 0; /* Top right corner sharp */
+}
+
+.form-content input,
+.form-content select,
+.form-content textarea {
+  margin-bottom: 15px; /* Space between inputs */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-header {
+  background-color: #367C2B; /* Adjust the color to your preferred shade of green */
+  color: white;
+  padding: 15px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 8px; /* Match the border-radius of your form if any */
+  border-top-right-radius: 8px; /* Match the border-radius of your form if any */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
